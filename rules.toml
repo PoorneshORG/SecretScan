@@ -603,6 +603,7 @@ keywords = [
 [[rules.allowlists]]
 regexes = [
     '''^[a-zA-Z_.-]+$''',
+    '''ops_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ikpvb''',
 ]
 [[rules.allowlists]]
 description = "Allowlist for Generic API Keys"
