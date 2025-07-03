@@ -63,6 +63,14 @@ stopwords = [
     "abcdefghijklmnopqrstuvwxyz",
 ]
 
+
+[[allowlist]]
+description = "Allow known ops_token in config.json"
+paths = ["config.json"]
+fingerprints = [
+  "/app/config.json:generic-api-key:2"
+]
+
 [[rules]]
 id = "1password-secret-key"
 description = "Uncovered a possible 1Password secret key, potentially compromising access to secrets in vaults."
@@ -180,13 +188,6 @@ keywords = [
 [[rules.allowlists]]
 regexes = [
     '''.+EXAMPLE$''',
-]
-
-[[allowlist]]
-description = "Allow ops_token in config.json"
-paths = ["config.json"]
-fingerprints = [
-  "/app/config.json:generic-api-key:2"
 ]
 
 [[rules]]
