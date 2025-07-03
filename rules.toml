@@ -57,17 +57,12 @@ regexes = [
     '''^@(?:[A-Z_]+|[a-z_]+)@$''',
     '''^/Users/(?i)[a-z0-9]+/[\w .-/]+$''',
     '''^/(?:bin|etc|home|opt|tmp|usr|var)/[\w ./-]+$''',
+    '''ops_[A-Za-z0-9_-]{20,}\.?[A-Za-z0-9_-]*\.?[A-Za-z0-9_-]*''',
 ]
 stopwords = [
     "014df517-39d1-4453-b7b3-9930c563627c",
     "abcdefghijklmnopqrstuvwxyz",
 ]
-
-
-[[allowlist]]
-description = "Allow known ops_token in config.json"
-paths = ["config.json"]
-fingerprints = ["/app/config.json:generic-api-key:2"]
 
 [[rules]]
 id = "1password-secret-key"
