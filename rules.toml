@@ -67,9 +67,7 @@ stopwords = [
 [[allowlist]]
 description = "Allow known ops_token in config.json"
 paths = ["config.json"]
-fingerprints = [
-  "/app/config.json:generic-api-key:2"
-]
+fingerprints = ["/app/config.json:generic-api-key:2"]
 
 [[rules]]
 id = "1password-secret-key"
