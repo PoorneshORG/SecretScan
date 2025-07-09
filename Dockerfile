@@ -1,1 +1,1 @@
-FROM poorneshthatturi/poornesh-gitleaks:v3
+FROM poorneshthatturi/poornesh-gitleaks:latest
